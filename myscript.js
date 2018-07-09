@@ -2,7 +2,6 @@ var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var filter = document.getElementById('filter');
 
-
 // form submit event 
 form.addEventListener('submit', addItem);
 
@@ -41,8 +40,6 @@ delBtn.appendChild(document.createTextNode('X'));
 li.appendChild(delBtn);
 
 itemList.appendChild(li);
-
-
 }
 
 function removeItem(e){
@@ -68,6 +65,6 @@ function filterItem(e){
  		else{
  			item.style.display = 'none';
  		}
-
+ 		
  	});	
 }
