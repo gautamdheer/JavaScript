@@ -2,6 +2,8 @@ var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var filter = document.getElementById('filter');
 
+#######################################
+
 // form submit event 
 form.addEventListener('submit', addItem);
 
@@ -63,7 +65,7 @@ function filterItem(e){
  	var itemName = item.firstChild.textContent;
  		if(itemName.toLowerCase().indexOf(text) != -1){
  			item.style.display = 'block';
- 		}
+ 		}	
  		else{
  			item.style.display = 'none';
  		}
