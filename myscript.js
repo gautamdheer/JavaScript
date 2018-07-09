@@ -54,6 +54,8 @@ function removeItem(e){
 function filterItem(e){
 	// convert text into lowercase
 	var text =  e.target.value.toLowerCase();
+
+	// selecting the li by tag
 	var items =  itemList.getElementsByTagName('li');
  
  	// convert to an array
@@ -65,6 +67,6 @@ function filterItem(e){
  		else{
  			item.style.display = 'none';
  		}
- 		
+
  	});	
 }
